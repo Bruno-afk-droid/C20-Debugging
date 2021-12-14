@@ -6,7 +6,7 @@ function findLongestWord(arr){
         if (i==0) {
             var longestWord = arr[i];
         }
-        if(arr[i].length < longestWord.length){
+        if(arr[i].length > longestWord.length){
             longestWord = arr[i];
         }
     }
