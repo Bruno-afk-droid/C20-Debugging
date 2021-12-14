@@ -10,7 +10,7 @@ function findLongestWord(arr){
             longestWord = arr[i];
         }
     }
-    return arr[0];
+    return longestWord;
 }
 
 var result = findLongestWord(list);
