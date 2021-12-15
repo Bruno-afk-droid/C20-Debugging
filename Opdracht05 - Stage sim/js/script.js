@@ -30,7 +30,7 @@ function updateLinkedIn(){
 function schrijfCv(){
     stageZoekActiesStatus[1] = true;
     console.log("Je hebt een fantastisch C.V. geschreven!");
-    console.warn("Tijd voor het schrijven van een algemene mail die je makkelijk kunt aanpassen per stagesollicitatie")
+    console.warn("Tijd voor het schrijven van een algemene mail die je makkelijk kunt aanpassen per stagesollicitatie");
     document.querySelector(".actie3").disabled = false;
 }
 
@@ -54,7 +54,7 @@ function maakGerichteMail(){
     result = confirm("Heb je goed nagedacht over de onderwerp regel?");
     if(result == true){
         document.querySelector(".actie6").disabled = false;
-        console.warn("Mooi, helemaal klaar om je mail te sturen!")
+        console.warn("Mooi, helemaal klaar om je mail te sturen!");   
     }
     else{
         console.error("Denk goed na over je onderwerp regel zodat je email helder overkomt bij het stagebedrijf");
