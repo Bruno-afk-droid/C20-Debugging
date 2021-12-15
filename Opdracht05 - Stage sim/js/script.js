@@ -12,6 +12,7 @@ var stageZoekActies = [
 var stageZoekActiesStatus = [false,false,false,false,false,false,false,false]
 var stageZoekPoging = 1;
 
+
 function init(){
     for (let i = 0; i < 7; i++) {
         document.getElementsByClassName("stage-actie")[i].disabled = true;
