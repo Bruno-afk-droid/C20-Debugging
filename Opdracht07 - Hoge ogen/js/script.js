@@ -11,13 +11,13 @@ player2 = {
 }
 
 function werpDobbelsteen(){
-    var randomNumber = Math.floor(Math.random()*5 + 1);
+    var randomNumber = Math.floor(Math.random()*6 + 1);
     return randomNumber;
 }
 
 function werpDobbelstenen(){
     worp = [];
-    for (let i = 0; i <= 6; i++) {
+    for (let i = 0; i < 5; i++) {
         worp[i] = werpDobbelsteen();
     }
     return worp;
@@ -40,7 +40,7 @@ function playerWerp(){
         console.error("Player1 Wins!")
     }
     else{
-        player2.points;
+        player2.points++;
         console.error("Player2 Wins!")
     }
     console.log("Stand: " + player1.name +": " + player1.points + " | " + player2.name + ": " + player2.points);
