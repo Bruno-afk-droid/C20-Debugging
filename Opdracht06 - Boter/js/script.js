@@ -16,7 +16,7 @@ var box8 = "";
 var box9 = "";
 
 function switchPlayer(){
-    move--;
+    move++;
     if(currentPlayer == player1){
         currentPlayer = player2;
     }
@@ -155,7 +155,7 @@ function checkWin(){
         document.querySelector('#info').innerHTML = "Player" + ((move%2)+1) + " (" + currentPlayer + ") WINS in " + (move-1) + " moves";
         document.querySelector(".box1").style.opacity = 0.5;
         document.querySelector(".box2").style.opacity = 0.5;
-        document.querySelector(".box3").style.opacity = 0.5;
+        //document.querySelector(".box3").style.opacity = 0.5;
         document.querySelector(".box4").style.opacity = 0.5;
         // document.querySelector(".box5").style.opacity = 0.5;
         document.querySelector(".box6").style.opacity = 0.5;
@@ -208,7 +208,7 @@ function checkWin(){
     }
 
     // vertikaal |||
-    if(box7 == "O" && box7 == "O" && box7 == "O"){
+    if(box7 == "O" && box4 == "O" && box1 == "O"){
         document.querySelector('#info').innerHTML = "Player" + ((move%2)+1) + " (" + currentPlayer + ") WINS in " + (move-1) + " moves";
         // document.querySelector(".box1").style.opacity = 0.5;
         document.querySelector(".box2").style.opacity = 0.5;
