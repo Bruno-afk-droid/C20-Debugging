@@ -25,7 +25,7 @@ init();
 function updateLinkedIn(){
     stageZoekActiesStatus[0] = true;
     console.log("LinkedIn profiel geupdate.");
-    document.querySelector(".actie2").disabled = true;
+    document.querySelector(".actie2").disabled = false;
 }
 
 function schrijfCv(){
@@ -72,7 +72,7 @@ function mailStagebedrijf(){
 function wachtOpAntwoord(){
     stageZoekActiesStatus[6] = true;
     randomNumber = Math.floor(Math.random()*10);
-    if(randomNumber > 10){
+    if(randomNumber>5){
         console.warn("Je hebt een stage gevonden!! Gefeliciteerd!");
     }
     else{
