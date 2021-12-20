@@ -2,7 +2,8 @@ var inleiding = "Onze visie is leidend voor de opleidingsactiviteiten waaronder 
 var uitgangspunten = "De stage is een verplicht onderdeel van de opleiding waardoor studenten ervaring op de arbeidsmarkt krijgen die aansluit op de kennis die zij tijdens hun opleiding opdoen. De stage wordt niet beoordeeld d.m.v. een proeve omdat alle kerntaken op school worden geëxamineerd. De stage wordt beoordeeld door de praktijkopleider, in samenspraak met de schoolbegeleider, op basis van elders in deze stagegids beschreven criteria. De stage is bedoeld als leer-werkplek waarbij niet alleen ervaring opgedaan wordt op het vakgebied maar ook op het aanleren van de juiste beroepshouding. Hiervoor is een aantal kwaliteiten en eigenschappen benoemd die terug te vinden zijn in bijlage 1, Beroepshoudingsaspecten Applicatieontwikkelaar";
 
 var tekst = inleiding + " <br><br> " + uitgangspunten;
-var woordenArray = tekstToArray(inleiding);
+var woordenArray = tekstToArray(tekst);
+
 // console.log(woordenArray);
 
 document.querySelector("#tekst").innerHTML = tekst;
@@ -15,9 +16,9 @@ function tekstToArray(text){
 function checkWords(){
     input = document.querySelector("#input").value;
     var output = "";
-    // console.log(input);
-    if(input.length > 6){
-        for (let i = 1; i < woordenArray.length; i++) {
+    console.log(input);
+    if(input.length < 6){
+        for (let i = 0; i < woordenArray.length; i++) {
            if(input == woordenArray[i]){
                output += "<span style='color: red; text-decoration: underline'>" + woordenArray[i] + " " + "</span> "
             }
