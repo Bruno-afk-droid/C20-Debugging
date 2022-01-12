@@ -15,7 +15,8 @@ for (let i = 0; i < characters.length; i++) {
     character.childNodes[5].childNodes[3].innerHTML = characters[i].status;
     character.childNodes[5].childNodes[7].innerHTML = characters[i].species;
     character.childNodes[5].childNodes[11].innerHTML = characters[i].gender;
-    character.childNodes[5].childNodes[15].innerHTML = characters[i].origin;
+    character.childNodes[5].childNodes[15].innerHTML = characters[i].origin.name;
+    print(characters[i].origin);
 }
 
 exampleCharacter = document.getElementsByClassName("character")[0];
