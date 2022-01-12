@@ -13,7 +13,7 @@ for (let i = 0; i < characters.length; i++) {
     character.childNodes[1].innerHTML = characters[i].name;
     character.childNodes[3].src = characters[i].image;
     character.childNodes[5].childNodes[3].innerHTML = characters[i].status;
-    character.childNodes[5].childNodes[6].innerHTML = characters[i].species;
+    character.childNodes[5].childNodes[7].innerHTML = characters[i].species;
     character.childNodes[5].childNodes[11].innerHTML = characters[i].gender;
     character.childNodes[5].childNodes[15].innerHTML = characters[i].origin;
 }
