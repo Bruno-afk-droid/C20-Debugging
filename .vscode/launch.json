@@ -9,7 +9,7 @@
             "request": "launch",
             "name": "Launch Chrome against localhost",
             "url": "http://localhost:8080",
-            "webRoot": "C:/Users/Bruno/OneDrive - ROCvA, ROCvF en VOvA/_MODULES/C20-Debugging/Opdracht11 - Rick and Morty Characters/js/script.js"
+            "webRoot": "C:/Users/Bruno/OneDrive - ROCvA, ROCvF en VOvA/_MODULES/C20-Debugging/Opdracht11 - Rick and Morty Characters/index.html"
         }
     ]
 }
